@@ -17,6 +17,10 @@
 //} while (choice);
 
 
+
+
+
+
 //Prompt the user for a number.
 //Use a for loop to output all the numbers from that number to 0.
 //After that loop finishes, use another loop to output all the numbers
@@ -51,6 +55,10 @@
 //}
 //}
 
+
+
+
+
 //A door has a keypad entry. The combination to get in is 13579.
 //Write a while loop (not a do while loop)
 //that asks the user to enter a key code.
@@ -75,6 +83,10 @@
 //        Console.WriteLine("Please try again.");
 //    }
 //}
+
+
+
+
 
 //Continue the previous exercise, but now add a limited number of tries,
 //say 5. After 5 unsuccessful attempts, the loop ends,
@@ -116,6 +128,12 @@
 //    Console.WriteLine("TOO MANY ATTEMPTS. ABORTING");
 //}
 
+
+
+
+
+
+
 //repeat the same exercise as the previous,
 //except this time implement it with a do while loop.
 
@@ -125,8 +143,6 @@
 
 //do
 //{
-  
-
 //    Console.Write("Please enter the door code: ");
 //    if (int.TryParse(Console.ReadLine(), out int userInput))
 //    {
@@ -146,12 +162,7 @@
 //    {
 //        attempts++;
 //        Console.WriteLine("Invalid input. " + attempts + " attempts now used. Lock out after 5 attempts");
-        
-//    }
 
-//    if (attempts == 5)
-//    {
-//        Console.WriteLine("5 ATTEMPTS HAVE BEEN TRIED. LOCK OUT.");
 //    }
 
 //    if (attempts == 5)
@@ -161,4 +172,4 @@
 
 //    }
 
-//} while (locked = true);
+//} while (locked == true);
