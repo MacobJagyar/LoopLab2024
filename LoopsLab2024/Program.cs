@@ -128,48 +128,49 @@
 //    Console.WriteLine("TOO MANY ATTEMPTS. ABORTING");
 //}
 
+//Prompt the user to enter a number.
+//Use a for-loop to calculate the sum
+//of all the numbers from 1 to the number entered.
 
-
-
-
-
-
-//repeat the same exercise as the previous,
-//except this time implement it with a do while loop.
-
-
-//bool locked = true;
-//int attempts = 0;
-
-//do
+//while (true)
 //{
-//    Console.Write("Please enter the door code: ");
-//    if (int.TryParse(Console.ReadLine(), out int userInput))
-//    {
-//        attempts++;
+//    int sum = 0;
 
-//        if (userInput == 13579)
+//    Console.Write("Please enter a number: ");
+//    if(int.TryParse(Console.ReadLine(), out int userInput))
+//    {
+//        for (int i = 0; i <= userInput; i++)
 //        {
-//            Console.WriteLine("Correct. Welcome home");
-//            locked = false;
+//            sum += i;
+//        }
+//        Console.WriteLine("\nSum of all numbers from 1 to " + userInput + ": " + sum);
+//        Console.WriteLine("______________________________________________");
+//        Console.Write("Would you like to try another number (y/n)? ");
+//        string loopChoice = Console.ReadLine().ToUpper();
+        
+//        if (loopChoice == "Y")
+//        {
+//            Console.WriteLine("\nRestarting...");
+//            Thread.Sleep(1500);
+//            Console.Clear();
+//        }
+//        else if (loopChoice == "N")
+//        {
+//            Console.WriteLine("\nGoodbye!");
+//            break;
 //        }
 //        else
 //        {
-//            Console.WriteLine("Incorrect. " + attempts + " attempts now used. Lock out after 5 attempts");
+//            Console.WriteLine("\nThat wasn't y or n! Restarting anyway!");
+//            Thread.Sleep(1500);
+//            Console.Clear();
 //        }
 //    }
 //    else
 //    {
-//        attempts++;
-//        Console.WriteLine("Invalid input. " + attempts + " attempts now used. Lock out after 5 attempts");
-
+//        Console.WriteLine("That wasn't a valid input. Please enter a number.");
+//        Thread.Sleep(1500);
+//        Console.Clear();
 //    }
 
-//    if (attempts == 5)
-//    {
-//        Console.WriteLine("5 ATTEMPTS HAVE BEEN TRIED. LOCK OUT.");
-//        break;
-
-//    }
-
-//} while (locked == true);
+//}
